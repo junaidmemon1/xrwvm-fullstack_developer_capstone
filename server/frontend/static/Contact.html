@@ -1,0 +1,173 @@
+<html>
+<head>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Banner */
+    .banner {
+      padding: 50px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #00bcd4, #0097a7);
+      color: white;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .banner h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .banner p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* Navbar */
+    .navbar-custom {
+      background-color: darkturquoise;
+      height: 70px;
+    }
+
+    .navbar-custom .nav-link {
+      font-size: 18px;
+      color: white !important;
+    }
+
+    .navbar-custom .nav-link.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 50px 20px;
+    }
+
+    .contact-image {
+      flex: 1;
+      min-width: 300px;
+      max-width: 450px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    .contact-card {
+      flex: 1;
+      min-width: 300px;
+      max-width: 450px;
+      background-color: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-card h2 {
+      margin-bottom: 25px;
+      color: #0097a7;
+    }
+
+    .contact-card p {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    .contact-card span {
+      font-weight: bold;
+      color: #00bcd4;
+    }
+
+    .contact-card a {
+      color: #0097a7;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-image, .contact-card {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%; color:white;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Contact Us</h1>
+    <p>We are here to assist you in your car buying journey. Reach out to us anytime — we’d love to help!</p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <!-- Image -->
+    <img class="contact-image" 
+         src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg" 
+         alt="Customer Support">
+
+    <!-- Contact Info Card -->
+    <div class="contact-card">
+      <h2>Get in Touch</h2>
+      <p><span>Address:</span> 1234 Auto Lane, Car City, CA 90210, USA</p>
+      <p><span>Phone:</span> +1 (555) 123-4567</p>
+      <p><span>Email:</span> info@bestcars.com</p>
+      <p><span>Working Hours:</span> Mon - Fri: 9:00 AM - 6:00 PM</p>
+      <p><span>Social Media:</span> 
+        <a href="#" target="_blank">Facebook</a> | 
+        <a href="#" target="_blank">Twitter</a> | 
+        <a href="#" target="_blank">Instagram</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
